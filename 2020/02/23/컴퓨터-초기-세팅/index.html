@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="True">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="description" content="컴퓨터 초기 세팅 명령어 라인 도구 설치 Xcode를 설치하지 않고 필요한 명령어 라인 도구만 설치하는 방법이다. 터미널을 열고 아래 명령어를 입력한다. 1xcode-select --install  이렇게 설치한 명령어 라인 도구의 경로는 아래와 같다. 1&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools&#x2F;">
+    <meta name="description" content="컴퓨터 초기 세팅 명령어 라인 도구 설치 Xcode를 설치하지 않고 필요한 명령어 라인 도구만 설치하는 방법이다. 터미널을 열고 아래 명령어를 입력한다. 1$ xcode-select --install  이렇게 설치한 명령어 라인 도구의 경로는 아래와 같다. 1&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools&amp;#x2F">
 <meta property="og:type" content="article">
 <meta property="og:title" content="컴퓨터 초기 세팅">
 <meta property="og:url" content="https://yijaee.github.io/2020/02/23/%EC%BB%B4%ED%93%A8%ED%84%B0-%EC%B4%88%EA%B8%B0-%EC%84%B8%ED%8C%85/index.html">
 <meta property="og:site_name" content="개발을 개발개발">
-<meta property="og:description" content="컴퓨터 초기 세팅 명령어 라인 도구 설치 Xcode를 설치하지 않고 필요한 명령어 라인 도구만 설치하는 방법이다. 터미널을 열고 아래 명령어를 입력한다. 1xcode-select --install  이렇게 설치한 명령어 라인 도구의 경로는 아래와 같다. 1&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools&#x2F;">
+<meta property="og:description" content="컴퓨터 초기 세팅 명령어 라인 도구 설치 Xcode를 설치하지 않고 필요한 명령어 라인 도구만 설치하는 방법이다. 터미널을 열고 아래 명령어를 입력한다. 1$ xcode-select --install  이렇게 설치한 명령어 라인 도구의 경로는 아래와 같다. 1&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools&amp;#x2F">
 <meta property="og:locale" content="ko_KR">
 <meta property="article:published_time" content="2020-02-23T14:16:26.000Z">
-<meta property="article:modified_time" content="2020-02-23T14:58:40.887Z">
+<meta property="article:modified_time" content="2020-02-23T15:13:11.554Z">
 <meta property="article:author" content="YiJaeE">
 <meta name="twitter:card" content="summary">
     
@@ -148,7 +148,7 @@
 <li><p>명령어 라인 도구 설치</p>
 <p>Xcode를 설치하지 않고 필요한 명령어 라인 도구만 설치하는 방법이다.</p>
 <p>터미널을 열고 아래 명령어를 입력한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> xcode-select --install</span></span><br></pre></td></tr></table></figure>
 
 <p>이렇게 설치한 명령어 라인 도구의 경로는 아래와 같다.</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;Library&#x2F;Developer&#x2F;CommandLineTools&#x2F;</span><br></pre></td></tr></table></figure>
@@ -160,10 +160,10 @@
 <ol start="2">
 <li><p>Home-brew 설치</p>
 <p>터미널을 열고 아래 명령어를 입력한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ruby -e <span class="string">"<span class="variable">$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)</span>"</span></span></span><br></pre></td></tr></table></figure>
 
 <p>엔터키를 눌러 설치를 진행한 후 홈브류가 제대로 설치되었는지 아래의 명령어로 확인한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew doctor</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew doctor</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -172,10 +172,10 @@
 <ol start="3">
 <li><p>Node, npm 설치</p>
 <p>터미널을 열고 아래의 명령어를 입력한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> brew install node</span></span><br></pre></td></tr></table></figure>
 
 <p>설치 후 버전 확인은 아래 명령어를 사용한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> node -v</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> npm -v</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -183,7 +183,7 @@
 </ol>
 <ol start="4">
 <li><p>깃에 대한 설정을 한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name "가입할 때 썼던 네임"</span><br><span class="line">git config --global user.email "가입할 때 썼던 메일"</span><br><span class="line">git config --global core.editor "vim"</span><br><span class="line">git config --global core.pager "cat"</span><br><span class="line">git config --list</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.name <span class="string">"가입할 때 썼던 네임"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global user.email <span class="string">"가입할 때 썼던 메일"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global core.editor <span class="string">"vim"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --global core.pager <span class="string">"cat"</span></span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git config --list</span></span><br></pre></td></tr></table></figure>
 
 
 
@@ -193,29 +193,29 @@
 <li><p>필요한 작업들을 한다.</p>
 <ul>
 <li><p>Typescript</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g typescript</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g typescript</span></span><br></pre></td></tr></table></figure>
 
 <p>설치 후 버전 확인은 아래 명령어를 사용한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tsc -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> tsc -v</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Sass</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo gem install sass</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo gem install sass</span></span><br></pre></td></tr></table></figure>
 
 <p>내 경우엔 <code>sudo</code> 명령어가 없으면 gem 관련 오류가 나서 <code>sudo</code>를 붙여서 설치했다.</p>
 <p>설치 후 버전 확인은 아래 명령어를 사용한다. 맥은 Ruby가 기본적으로 설치되어 있어서 버전 확인을 하면 Ruby sass 라고 뜬다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sass -v</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sass -v</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Angular</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g @angular/cli</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install -g @angular/cli</span></span><br></pre></td></tr></table></figure>
 
 <p>설치 후 버전 확인은 아래 명령어를 사용한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ng version</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> ng version</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>Hexo</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-cli -g</span></span><br></pre></td></tr></table></figure>
 
 <p>Hexo를 설치할 폴더로 가서 아래 명령어를 사용한다.</p>
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init "사용할 폴더명"</span><br></pre></td></tr></table></figure>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> hexo init <span class="string">"사용할 폴더명"</span></span></span><br></pre></td></tr></table></figure>
 
 
 
